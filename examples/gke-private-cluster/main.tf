@@ -160,6 +160,7 @@ module "vpc_network" {
 
   cidr_block           = var.vpc_cidr_block
   secondary_cidr_block = var.vpc_secondary_cidr_block
+  cidr_subnetwork_width_delta = "4"
 }
 
 # Use a random suffix to prevent overlap in network names
